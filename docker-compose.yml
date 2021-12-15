@@ -20,7 +20,7 @@ services:
     expose:
       - "22"
     volumes:
-      - "./data: /usr/bin/data"
+      - "./data:/usr/bin/data"
     depends_on:
       - postgres-metatsore
     privileged: "true"
