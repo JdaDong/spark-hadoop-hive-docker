@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 #build images
-docker build -t hive-metastore:latest . -f hive-metastore/Dockerfile &&
-  docker build -t spark-with-hadoop-hive:latest . -f spark-hadoop-standalone/Dockerfile || exit 1
+# docker build -t hive-metastore:latest . -f hive-metastore/Dockerfile &&
+#   docker build -t spark-with-hadoop-hive:latest . -f spark-hadoop-standalone/Dockerfile || exit 1
 
 #start services
 docker-compose up -d &&
